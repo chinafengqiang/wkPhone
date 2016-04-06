@@ -80,4 +80,6 @@ public interface AppConstants {
       课程封面图片地址
      */
     String COURSE_ICON_PRE = "/upload/file/";
+
+
 }
