@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/header_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/course_image"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="200dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/classresources_big" />
+
+                <include layout="@layout/view_course_detail_titlebar" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/course_info_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header_view"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginTop="8.0dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingRight="13.5dip">
+
+                <TextView
+                    android:id="@+id/course_name"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13.5dip"
+                    android:layout_marginRight="17.5dip"
+                    android:layout_weight="1.0"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:lines="2"
+                    android:text="TextView"
+                    android:textColor="#ff666666"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:id="@+id/release_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="9.0dip"
+                    android:background="#ff2cb060"
+                    android:paddingBottom="2.0dip"
+                    android:paddingLeft="4.0dip"
+                    android:paddingRight="4.0dip"
+                    android:paddingTop="2.0dip"
+                    android:text="首发"
+                    android:textColor="#ffececec"
+                    android:textSize="14.0sp" />
+
+                <!--<TextView
+                   android:id="@+id/follow_up"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="#ffce5251"
+                   android:paddingBottom="2.0dip"
+                   android:paddingLeft="4.0dip"
+                   android:paddingRight="4.0dip"
+                   android:paddingTop="2.0dip"
+                   android:text="连载"
+                   android:textColor="#ffececec"
+                   android:textSize="14.0sp" />-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/course_fee_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/course_info_ll"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginLeft="13.5dip"
+                android:gravity="center_vertical">
+
+                <RatingBar
+                    android:id="@+id/rating_bar"
+                    style="@style/CommentRatingBarSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10.0dip"
+                    android:isIndicator="true" />
+
+                <TextView
+                    android:id="@+id/course_comment_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10.0dip"
+                    android:text="(0份评价)"
+                    android:textColor="#cc363642" />
+
+                <!--<TextView
+                    android:id="@+id/course_learner_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/icon_person"
+                    android:drawablePadding="3.0dip"
+                    android:text="在学人数"
+                    android:textColor="#cc363642" />-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/course_intro_price_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/course_fee_ll"
+                android:layout_marginBottom="8.0dip"
+                android:layout_marginLeft="13.5dip"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/course_intro_price_now"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10.0dip"
+                    android:text="￥1000"
+                    android:textAppearance="@style/TextStyle_20_3" />
+
+                <TextView
+                    android:id="@+id/course_intro_price_old"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥1200"
+                    android:visibility="gone"
+                    android:textAppearance="@style/TextStyle_14_4" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/list_divide_line"
+                android:layout_width="fill_parent"
+                android:layout_height="10.0dip"
+                android:layout_below="@id/course_intro_price_container"
+                android:background="@color/background_holo_light"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/list_divide_line"
+                android:orientation="horizontal">
+
+                <com.xy.view.ViewPagerIndicatorView
+                    android:id="@+id/viewpager_indicator_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/course_intro_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <include layout="@layout/view_course_detail_enroll"></include>
+    </RelativeLayout>
+
+</RelativeLayout>

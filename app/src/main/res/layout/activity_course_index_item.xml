@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--九宫格每一格的布局-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <ImageView
+        android:id="@+id/course_category_img"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/course_classother" />
+
+    <TextView
+        android:id="@+id/course_category_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="分类"
+        android:textAppearance="@style/TextStyle_14_6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/course_category_img"
+        />
+
+</RelativeLayout>

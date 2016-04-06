@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="category">
+        <item>大学四级考试</item>
+        <item>大学六级考试</item>
+    </string-array>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50.0dip"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal"
+    android:visibility="visible">
+
+    <RelativeLayout
+        android:id="@+id/enrolled_page"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/text_continue"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_green_bg_selector2"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="@string/resume_study"
+            android:textColor="@color/white"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/unenrolled_page"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+<com.xy.view.RevealLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/enroll_button"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="3.0dip"
+            android:background="@drawable/btn_green_bg_selector2"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_enroll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:text="@string/enroll_course"
+                android:textColor="@color/white"
+                android:textSize="18.0dip" />
+        </LinearLayout>
+</com.xy.view.RevealLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/enroll_loading"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_marginTop="2.0dip"
+        android:background="@color/xiala_color_click"
+        android:padding="8.0dip"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@drawable/loading_progress_white" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.xy.view.TitleBarView
+        android:id="@+id/title_bar"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.xy.view.TitleBarView>
+
+
+        <WebView
+            android:id="@+id/study_chapter_wv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:layout_below="@id/title_bar"
+            />
+
+    <TextView
+        android:id="@+id/v_jx"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/transparent"
+        android:layout_alignParentBottom="true"
+        android:textAppearance="@style/TextStyle_18_8"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:visibility="gone"
+        android:drawableLeft="@mipmap/tip_vjx"
+        />
+
+
+</RelativeLayout>

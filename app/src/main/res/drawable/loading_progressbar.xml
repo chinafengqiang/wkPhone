@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:variablePadding="false" android:oneshot="false"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="200">
+        <animation-list android:variablePadding="false" android:oneshot="true">
+            <item android:duration="100" android:drawable="@mipmap/progress_1" />
+        </animation-list>
+    </item>
+    <item android:duration="200">
+        <animation-list android:variablePadding="false" android:oneshot="true">
+            <item android:duration="100" android:drawable="@mipmap/progress_2" />
+        </animation-list>
+    </item>
+    <item android:duration="200">
+        <animation-list android:variablePadding="false" android:oneshot="true">
+            <item android:duration="100" android:drawable="@mipmap/progress_3" />
+        </animation-list>
+    </item>
+    <item android:duration="200">
+        <animation-list android:variablePadding="false" android:oneshot="true">
+            <item android:duration="100" android:drawable="@mipmap/progress_4" />
+        </animation-list>
+    </item>
+    <item android:duration="200">
+        <animation-list android:variablePadding="false" android:oneshot="true">
+            <item android:duration="100" android:drawable="@mipmap/progress_5" />
+        </animation-list>
+    </item>
+    <item android:duration="100">
+        <animation-list android:variablePadding="false" android:oneshot="true">
+            <item android:duration="100" android:drawable="@mipmap/progress_6" />
+        </animation-list>
+    </item>
+    <item android:duration="200">
+        <animation-list android:variablePadding="false" android:oneshot="true">
+            <item android:duration="100" android:drawable="@mipmap/progress_7" />
+        </animation-list>
+    </item>
+    <item android:duration="200">
+        <animation-list android:variablePadding="false" android:oneshot="true">
+            <item android:duration="100" android:drawable="@mipmap/progress_8" />
+        </animation-list>
+    </item>
+</animation-list>

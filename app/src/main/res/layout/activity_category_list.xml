@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include layout="@layout/course_title_bar" android:id="@+id/title_bar"/>
+
+
+    <com.xy.view.CustomListView
+        android:id="@+id/categoryList"
+        android:layout_below="@id/title_bar"
+        android:cacheColorHint="@android:color/transparent"
+        android:fadingEdgeLength="0dp"
+        android:divider="@color/devide_line"
+        android:dividerHeight="0dp"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+
+    </com.xy.view.CustomListView>
+
+</RelativeLayout>

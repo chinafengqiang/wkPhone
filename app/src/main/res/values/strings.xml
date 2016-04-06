@@ -1,0 +1,138 @@
+<resources>
+    <string name="app_name">新翼微课堂</string>
+    <string name="action_settings">设置</string>
+    <string name="api_host">http://127.0.0.1:8080/xywk/api</string>
+    <string name="get_data_fail">获取数据失败，请检查您的网络...</string>
+    <string name="get_data_server_exception">服务器出现异常...</string>
+    <string name="exist_app_ts">再按一次退出程序</string>
+    <!--知识中心-->
+    <string name="course_title">选课中心</string>
+    <string name="study_title">学习中心</string>
+    <string name="usersetting_title">个人中心</string>
+    <string name="userlogin_title">用户登录</string>
+    <string name="get_category_fail">获取分类失败</string>
+    <string name="category_title">分类</string>
+    <string name="category_all">全部</string>
+    <string name="course_is_free">免费</string>
+    <string name="course_price_type">￥</string>
+    <string name="enroll_course">参加该课程</string>
+    <string name="resume_study">继续学习</string>
+    <string name="course_chapter">目录</string>
+    <string name="course_profile">简介</string>
+    <string name="course_book">知识讲解</string>
+    <string name="course_chapter_pt">章节练习</string>
+    <string name="course_moni">模拟试题</string>
+    <string name="course_linian">历年真题</string>
+    <string name="v_jx_title">视频解析</string>
+    <string name="v_jx_play_fail">播放解析失败，请检查是否安装播放器</string>
+
+    <string name="question_not_exist">无试题存在</string>
+    <string name="question_is_maxpre">已为第一题</string>
+    <string name="question_is_maxnext">已为最后一题</string>
+
+    <string name="que_answer_sc">收藏</string>
+    <string name="que_answer_fk">反馈</string>
+    <string name="my_que_sc">我的收藏</string>
+    <string name="my_que_err">我的错题</string>
+    <string name="my_que_remove">移除</string>
+
+    <string name="que_answer_sc_ok">收藏成功</string>
+    <string name="que_answer_sc_fail">收藏失败</string>
+    <string name="que_answer_sced">此题已经收藏</string>
+
+    <string name="my_que_remove_fail">移除失败</string>
+    <string name="my_que_remove_ok">移除成功</string>
+    <string name="my_que_remove_title">移除题目</string>
+    <string name="my_que_remove_cfm">您确定要移除此题目？</string>
+
+    <string name="que_answer_resp_title">问题反馈</string>
+    <string name="que_answer_resp_content">反馈内容</string>
+    <string name="que_answer_resp_content_isnull">请填写反馈内容</string>
+    <string name="que_answer_resp_ok">提交问题反馈成功</string>
+    <string name="que_answer_resp_fail">提交问题反馈失败</string>
+
+    <string name="spinner">下拉列表</string>
+
+
+    <string name="btn_cfm">确定</string>
+    <string name="btn_cancle">取消</string>
+    <!-- Refresh -->
+    <string name="p2refresh_head_load_more">加载更多</string>
+    <string name="p2refresh_end_load_more">更    多</string>
+    <string name="p2refresh_end_click_load_more">点击加载</string>
+    <string name="p2refresh_release_refresh">松开立即刷新</string>
+    <string name="p2refresh_pull_to_refresh">下拉刷新</string>
+    <string name="p2refresh_doing_head_refresh">正在刷新&#8230;</string>
+    <string name="p2refresh_doing_end_refresh">加载中&#8230;</string>
+    <string name="p2refresh_refresh_lasttime">最近更新&#160;&#058;&#160;</string>
+    <string name="tv_loading">正在努力加载,请稍后...</string>
+
+    <!-- XList -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">最近更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="xlistview_refesh_time">刚刚</string>
+
+    <!--个人中心 -->
+    <string name="user_setting_title">个人中心</string>
+    <string name="setting_exit">退出登录</string>
+    <string name="setting_userinfo">个人信息</string>
+    <string name="sign_in">登 录</string>
+    <string name="register">注册</string>
+    <string name="weibo_login">微博登录</string>
+    <string name="qq_login">QQ登录</string>
+    <string name="webchat_login">微信登录</string>
+    <string name="sina">新浪</string>
+    <string name="weibo">微博</string>
+    <string name="weixin">微信</string>
+    <string name="qq">QQ</string>
+    <string name="login_username_hint">用户账号</string>
+    <string name="login_password_hint">用户密码</string>
+    <string name="login_username_null">请输入用户账号</string>
+    <string name="login_password_null">请输入用户密码</string>
+    <string name="login_fail">登录失败</string>
+    <string name="login_user_notexist">用户不存在</string>
+    <string name="login_password_error">用户密码错误</string>
+    <string name="login_user_novalid">用户无效</string>
+    <string name="setting_exit_btn">退出</string>
+    <string name="setting_cance">取消</string>
+    <string name="setting_exit_cfg">确认要退出登录？</string>
+    <string name="user_username_prix">用户账号：</string>
+    <string name="setting_roominfo_title">会议信息设置</string>
+    <string name="setting_roominfo_username_title">用户名：</string>
+    <string name="setting_userinfo_username">用户账户：</string>
+    <string name="setting_userinfo_banlance">账户余额：</string>
+    <string name="setting_userinfo_banlance_pre">￥</string>
+    <string name="setting_userinfo_nickname">用户昵称：</string>
+    <string name="setting_userinfo_truename">用户姓名：</string>
+    <string name="setting_userinfo_pass">用户密码：</string>
+    <string name="setting_userinfo_email">电子邮箱：</string>
+    <string name="setting_userinfo_mphone">手机号码：</string>
+    <string name="setting_userinfo_address">用户地址：</string>
+    <string name="button_confirm">确 定</string>
+    <string name="user_info_setting_title">个人信息设置</string>
+    <string name="userinfo_truename_null">请输入用户姓名</string>
+    <string name="userinfo_pass_null">请输入用户密码</string>
+    <string name="userinfo_mphone_null">请输入手机号码</string>
+    <string name="setting_userinfo_ok">个人信息设置成功</string>
+    <string name="setting_userinfo_error">个人信息设置失败</string>
+    <string name="my_question_sc">收藏题目</string>
+    <string name="my_question_mstike">我的错题</string>
+    <!--学习中心 -->
+    <string name="study_sych_fail">参加学习失败</string>
+    <string name="study_is_free">免费参加</string>
+    <string name="study_is_fee">购买</string>
+
+    <!--下载中心 -->
+    <string name="download_title">下载中心</string>
+    <string name="download_course_btn">下载资料</string>
+    <string name="download_fail">下载失败</string>
+    <string name="download_ok">下载成功</string>
+    <string name="unzip_fail">解压下载文件失败</string>
+    <string name="download_cancle">您已取消了的下载...</string>
+    <string name="download_course_pre">准备下载...</string>
+    <string name="download_course_downloading">下载中...</string>
+</resources>

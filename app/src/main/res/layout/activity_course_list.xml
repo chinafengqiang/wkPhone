@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.xy.view.TitleBarView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.xy.view.TitleBarView>
+
+    <LinearLayout
+        android:id="@+id/course_list_head_ll"
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="5"
+        android:layout_marginLeft="13.5dp"
+        >
+
+        <com.xy.view.CourseSpinnerView
+            android:id="@+id/spinner"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:textAppearance="@style/TextStyle_14_4"
+            >
+
+        </com.xy.view.CourseSpinnerView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            >
+            <TextView
+                android:id="@+id/course_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收费 "
+                android:textAppearance="@style/TextStyle_14_4"
+                android:drawableRight="@mipmap/myclass_rank_down"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:id="@+id/course_free"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="免费 "
+                android:drawableRight="@mipmap/myclass_rank_down"
+                android:textAppearance="@style/TextStyle_14_4"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/course_list_head_ll"
+        android:background="@color/devide_line" />
+
+    <FrameLayout
+        android:id="@+id/course_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line" />
+
+</RelativeLayout>

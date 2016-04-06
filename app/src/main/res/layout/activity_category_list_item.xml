@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    >
+    <LinearLayout android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@+id/group_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13.5dip"
+        android:layout_marginRight="13.5dip"
+        android:layout_marginTop="10dp"
+        >
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_width="30.5dip"
+            android:layout_height="40dp">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/cate_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/course_cate_default" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/cate_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="高等教育"
+            android:textAppearance="@style/TextStyle_16_6"
+            android:singleLine="true"
+            android:layout_weight="1.0" />
+        <ImageView
+            android:layout_gravity="center|right"
+            android:id="@+id/cate_load_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:src="@mipmap/course_cate_load_all" />
+    </LinearLayout>
+    <View
+        android:id="@+id/under_line"
+        android:background="#ffced0d1"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_marginLeft="13.5dip" />
+    <com.xy.view.CategoryGridView
+        android:id="@+id/categoryGrideView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:numColumns="3"
+        android:columnWidth="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="13.5dp"
+        >
+
+    </com.xy.view.CategoryGridView>
+
+    <View
+        android:id="@+id/list_divide_line"
+        android:background="@color/background_holo_light"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="10.0dip" />
+</LinearLayout>

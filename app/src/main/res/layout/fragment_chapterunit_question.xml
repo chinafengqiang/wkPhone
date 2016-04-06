@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <com.xy.view.CustomerScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_bar"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <WebView
+                android:id="@+id/question_chapter_wv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:scrollbars="none"
+
+                />
+
+            <RelativeLayout
+                android:id="@+id/quesion_answer_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question_chapter_wv"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:visibility="gone"
+                >
+
+                <ImageView
+                    android:id="@+id/answer_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/tip_answer" />
+
+                <TextView
+                    android:id="@+id/quesion_answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/answer_img"
+                    android:text=""
+                    android:textAppearance="@style/TextStyle_18_8" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/jx_rl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/quesion_answer_rl"
+                android:visibility="gone"
+                >
+                <WebView
+                    android:id="@+id/quesion_answer_wv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:scrollbars="none"
+                    android:visibility="gone"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/v_jx_rl"
+                    android:layout_below="@id/quesion_answer_wv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/p_jx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:src="@mipmap/tip_jx"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/v_jx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="40dp"
+                        android:src="@mipmap/tip_vjx" />
+                </RelativeLayout>
+
+
+                <WebView
+                    android:id="@+id/question_jx_wv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/v_jx_rl"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:scrollbars="none"
+                    />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </com.xy.view.CustomerScrollView>
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#f3f3f3"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:id="@+id/menuTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="目录"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            />
+
+        <View android:id="@+id/under_line"
+            android:background="#ff05d16f"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_below="@id/menuTitleText"
+            android:layout_marginTop="10dp"
+            />
+       <!-- <LinearLayout
+
+            android:id="@+id/chapter_refresh"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:src="@mipmap/ic_cached_white_24dp" />
+
+        </LinearLayout>-->
+
+    </RelativeLayout>
+
+
+
+
+    <ListView
+        android:id="@+id/treeList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:dividerHeight="0.5dip"
+        android:divider="@color/xiala_color_click"
+        android:layout_marginTop="10dp"
+        >
+    </ListView>
+
+</LinearLayout>

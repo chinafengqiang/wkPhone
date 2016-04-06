@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xy.wk"
+    android:versionCode="1"
+    android:versionName="1.0.0"
+    >
+
+    <uses-sdk android:minSdkVersion="11" />
+
+    <!-- 访问网络的权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <permission android:name="android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS" >
+    </permission>
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 是否有网络的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.xy.wk.InitActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.xy.wk.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.main" >
+        </activity>
+
+        <activity
+            android:name="com.xy.wk.CategoryActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.main" >
+        </activity>
+
+        <activity
+            android:name="com.xy.wk.CourseListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.main" >
+        </activity>
+
+        <activity
+            android:name="com.xy.wk.CourseDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.main" >
+        </activity>
+
+        <activity
+            android:name="com.xy.wk.CourseStudyActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.main" >
+        </activity>
+
+        <activity
+            android:name="com.xy.wk.CourseStudyChapterActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.main" >
+        </activity>
+
+        <activity
+            android:name="com.xy.wk.QuestionChapterActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.main" >
+        </activity>
+
+        <activity
+            android:name="com.xy.wk.CourseStudyChapterResActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.main" >
+        </activity>
+
+        <activity
+            android:name="com.xy.wk.CourseStudyChapterTreeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.main" >
+        </activity>
+
+        <activity
+            android:name="com.xy.wk.CourseQuestionChapterActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.main" >
+        </activity>
+
+        <activity
+            android:name="com.xy.wk.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.main" >
+        </activity>
+
+        <activity
+            android:name="com.xy.wk.UserInfoActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.main" >
+        </activity>
+
+        <activity
+            android:name="com.xy.wk.ViewLocalCourseActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.main" >
+        </activity>
+
+        <activity
+            android:name="com.xy.wk.DownloadChapterTreeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.main" >
+        </activity>
+
+        <activity
+            android:name="com.xy.wk.DownloadStudyChapterResActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.main" >
+        </activity>
+    </application>
+
+</manifest>

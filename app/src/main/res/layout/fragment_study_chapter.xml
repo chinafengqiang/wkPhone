@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent">
+
+    <!--<WebView
+        android:id="@+id/study_chapter_wv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        />-->
+    <com.xy.view.TouchWebView
+        android:id="@+id/study_chapter_wv"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/v_jx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/study_chapter_wv"
+        android:textAppearance="@style/TextStyle_16_5"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"
+        android:text="@string/v_jx_title"
+        />
+
+</RelativeLayout>

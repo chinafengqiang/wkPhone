@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!--<com.xy.view.CustomListView
+        android:id="@+id/courseList"
+        android:layout_below="@id/title_bar"
+        android:cacheColorHint="@android:color/transparent"
+        android:fadingEdgeLength="0dp"
+        android:divider="@color/devide_line"
+        android:dividerHeight="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.xy.view.CustomListView>-->
+
+    <com.xy.view.XListView
+        android:id="@+id/courseList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:listSelector="@color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:fadingEdgeLength="0dp"
+        android:divider="@color/devide_line"
+        android:layout_margin="10dp"
+        android:dividerHeight="0dp"
+        android:scrollbars="none"
+        />
+
+
+</RelativeLayout>

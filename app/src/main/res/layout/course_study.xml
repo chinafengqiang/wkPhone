@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_frame"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/lesson_bg"
+    android:orientation="vertical">
+    <com.xy.view.TitleBarView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+    <!-- 第一行 -->
+    <LinearLayout
+        android:id="@+id/one_ll"
+        android:layout_below="@id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:background="@color/lesson_bg"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/lay_study_chapter"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:background="@drawable/selector_class_index_item">
+
+            <RelativeLayout
+                android:id="@+id/course_study_chapter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+
+                <ImageView
+                    android:id="@+id/class_index_380_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/course_book" />
+
+
+
+                <TextView
+                    android:id="@+id/class_index_380_class_context"
+                    style="@style/TextStyle_14_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/class_index_380_img"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/padding_5_normal"
+                    android:text="@string/course_book" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lay_study_chapter_lx"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:background="@drawable/selector_class_index_item">
+
+            <RelativeLayout
+                android:id="@+id/class_index_380_center_homework_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/class_index_380_img2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/course_chapter_pt" />
+
+                <TextView
+                    android:id="@+id/class_index_380_class_context2"
+                    style="@style/TextStyle_14_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/class_index_380_img2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/padding_4_normal"
+                    android:text="@string/course_chapter_pt" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <!--<RelativeLayout
+            android:id="@+id/lay_answering"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:background="@drawable/selector_class_index_item">
+
+            <RelativeLayout
+                android:id="@+id/class_index_380_center_question_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/iv_class_index_380_class_answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/selector_qa_background" />
+
+                <TextView
+                    android:id="@+id/tv_class_index_380_class_answer"
+                    style="@style/TextStyle_10_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_class_index_380_class_answer"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/padding_4_normal"
+                    android:text="question" />
+            </RelativeLayout>
+
+        </RelativeLayout>-->
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/padding_0.5_normal"
+        android:background="#fff0f0f0" />
+
+
+    <!-- 第二行 -->
+    <LinearLayout
+        android:id="@+id/two_ll"
+        android:layout_below="@id/one_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:background="@color/lesson_bg"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/lay_study_mn"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:background="@drawable/selector_class_index_item">
+
+
+            <RelativeLayout
+                android:id="@+id/class_index_380_center_note_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/class_index_380_img6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/test_paper" />
+
+                <TextView
+                    android:id="@+id/class_index_380_class_context6"
+                    style="@style/TextStyle_14_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/class_index_380_img6"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/padding_4_normal"
+                    android:text="@string/course_moni" />
+            </RelativeLayout>
+
+            <!--<View
+                android:layout_width="@dimen/padding_0.5_normal"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="#fff0f0f0"
+                android:visibility="visible" />-->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lay_study_zt"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:background="@drawable/selector_class_index_item">
+
+
+            <RelativeLayout
+                android:id="@+id/class_index_380_center_discuss_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/class_index_380_img4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/course_linian" />
+
+                <TextView
+                    android:id="@+id/class_index_380_class_context4"
+                    style="@style/TextStyle_14_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/class_index_380_img4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/padding_4_normal"
+                    android:text="@string/course_linian" />
+            </RelativeLayout>
+
+            <!--<View
+                android:layout_width="@dimen/padding_0.5_normal"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="#fff0f0f0" />-->
+        </RelativeLayout>
+
+        <!--<RelativeLayout
+            android:id="@+id/lay_st"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:background="@drawable/selector_class_index_item">
+
+
+            <RelativeLayout
+                android:id="@+id/class_index_380_center_st_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/iv_class_index_380_st"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/selector_st_background" />
+
+                <TextView
+                    android:id="@+id/tv_class_index_380_st"
+                    style="@style/TextStyle_10_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_class_index_380_st"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/padding_4_normal"
+                    android:text="alumni_association" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/padding_0.5_normal"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="#fff0f0f0" />
+        </RelativeLayout>-->
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button_download"
+        style="@style/Theme.Button.edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/defalut_margin_large"
+        android:layout_marginRight="@dimen/defalut_margin_large"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/two_ll"
+        android:text="@string/download_course_btn" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/padding_0.5_normal"
+        android:background="#fff0f0f0" />
+
+
+
+</RelativeLayout>

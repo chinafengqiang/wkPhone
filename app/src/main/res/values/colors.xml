@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="devide_line">#CBCED2</color>
+    <color name="blue">#499BF7</color>
+    <color name="whites">#ffffff</color>
+    <color name="grays">#818181</color>
+    <color name="gray_font">#818181</color>
+    <color name="common_title">#F9F9F9</color>
+    <color name="black">#000000</color>
+    <color name="pull_refresh_textview">#000000</color>
+    <color name="gold">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="refresh_head_bg">#2B2B2B</color>
+    <color name="red">#FF0000</color>
+    <color name="backColor">#2000</color>
+    <color name="detail_bgColor">#f5f5f5</color>
+    <color name="defaultTextColor">#666</color>
+    <color name="viewfinder_frame">#2477ab</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_view">#b0000000</color>
+    <color name="gray">#AFAFAF</color>
+    <color name="yellow">#F99503</color>
+    <color name="green">#ff009900</color>
+    
+    <color name="orange">#ff9900</color>
+    <color name="deepcolor">#faaa5f</color>
+    <color name="shadowcolor">#333333</color>
+    <color name="naming">#ABABAB</color>
+    <color name="background">#272727</color>
+    <color name="orange_yellow">#9b9ba0</color>
+
+    <drawable name="semi_black">#80000000</drawable>
+
+    <color name="remote_connect_text">#FFe78018</color>
+    <color name="remote_disconnect_text">#FF901821</color>
+    
+    <color name="blueviolet">#8A2BE2</color><!-- 紫罗兰蓝色 -->
+    <color name="lightskyblue">#87CEFA</color><!--亮天蓝色 -->
+    <color name="skyblue">#87CEEB</color><!--天蓝色 -->
+    <color name="lightblue">#add8e6</color> <!-- 亮蓝色 --> 
+    <color name="lessblue">#1198D8</color> <!-- 亮蓝色 --> 
+    
+    <color name="main_blue">#07467b</color> 
+     
+    <!--<color name="title_color">#2db0c1</color> -->
+
+    <color name="title_color">#45C5EB</color>
+    <color name="title_color_light">#ff10fe10</color>
+    
+    <color name="ls_color">#66CC99</color> 
+    <color name="y_btn_color">#009933</color> 
+    
+    <color name="color_chat_bkg">#fedee0f0</color>
+    <color name="color_chat_web_bkg">#8e808080</color>
+    <color name="color_notepad_bkg">#e0a2e3e4</color>
+    <color name="color_notepad_text">#ff020304</color>
+    
+    <color name="color_list_meeting">#ff10fe10</color>
+    <color name="color_list_meeting_bkg">#80A8DDFD</color>
+    <color name="color_list_meeting_name">#ff000000</color>
+	<color name="color_list_meeting_online">#ff000000</color>
+	<color name="color_list_meeting_lock">#ff000000</color>
+	
+	<color name="color_ewb_bkg">#fe808080</color>
+	<color name="color_state_bkg">#a1a0b0a0</color>
+	<color name="color_theme_bkg">#FFA2D5F3</color>
+	<color name="color_theme_bottom">#FFA2D0F0</color>
+	<color name="color_button_bkg">#AF20aafe</color>
+	
+	<color name="color_text_RoomName">#ffffffff</color>
+	<color name="color_meeting_title">#ff8BB8F9</color>
+    
+	<color name="logo_bkg">#ffA3C9DE</color> 
+	<color name="logo_bkg_right">#00000000</color> 
+	<color name="logo_bkg_top">#ff3FA0D7</color>
+	<color name="logo_bkg_bottom">#0066B4E2</color>
+	
+	<color name="user_list_bkg">#D0A2D5F3</color>
+	<color name="user_list_header">#FFFFFFFF</color>
+	<color name="main_video_bkg">#ffEFF9FF</color>
+	<color name="setting_title">#ffA3C9DE</color>
+	
+	<color name="theme_transparent">#b4A2D5F3</color>
+	<color name="button_normal">#b4A2D5F3</color>
+	<color name="button_selected">#e482b5d3</color>
+	    
+	<color name="white">#ffffffff</color>
+	<color name="full_transparent">#00000000</color>
+	<color name="time_color">#ff282E3A</color>
+	<color name="xiala_color_click">#50a434</color>
+	<color name="xiala_color">#009ACD</color>
+     
+	<color name="cy_color">#EDEEF0</color>
+	<color name="cy_h_color">#CBCED2</color>
+	<color name="cy_h_color2">#EBEBEB</color>
+	
+	<color name="sp_text_color">#CFDAE6</color>
+	<color name="sp_text_color2">#9B9B9B</color>
+	
+	<color name="bar_bg_color">#FCFCFC</color>
+	<color name="sy_bg_color">#b0b0b0</color>
+	<color name="title_btn_bg">#289696</color>
+	<color name="main_front_color">#1DAEBF</color>
+	<color name="body_bg_color">#eeeeee</color>
+	<color name="join_btn_bg_color">#ff7342</color>
+	
+	<color name="contact_name_color_old">#336598</color>
+	<color name="contact_name_color">#515151</color>
+	<color name="contact_sbar_color">#515151</color>
+	
+	
+	<color name="contact_memu_color">#99CCCC</color>
+	<!--<color name="edit_btn_color">#FF9933</color>-->
+	<color name="edit_btn_color">#ffa442</color>
+	<color name="edit_btn_color_gradient">#ff801a</color>
+	
+	
+	    <!-- 日历 -->
+    <color name="calendar_background">#000000</color>
+    <color name="recordremind_background">#FFFFFF</color>
+    <color name="border_color">#FFFFFF</color>
+    <color name="weekname_color">#FFFFFF</color>
+    <color name="day_color">#FFFFFF</color>
+    <color name="inner_grid_color">#FFFFFF</color>
+    <color name="prev_next_month_day_color">#999999</color>
+    <color name="text_color">#FFFF00</color>
+    <color name="recordremindtext_color">#000000</color>
+    <color name="current_day_color">#FF0000</color>
+    <color name="today_background_color">#FF0000</color>
+    <color name="today_color">#FFFFFF</color>
+    <color name="sunday_saturday_color">#FF0000</color>
+    <color name="sunday_saturday_prev_next_month_day_color">#990000</color>
+    <color name="bgcolor">#ffffff</color>
+    <color name="txtcolor">#000000</color>
+    <color name="Calendar_WeekBgColor">#EFE7DE</color>
+    <color name="Calendar_WeekFontColor">#8C8A8C</color>
+    <color name="Calendar_DayBgColor">#F7F7F7</color>
+    <color name="isHoliday_BgColor">#E0E0E0</color>
+    <color name="unPresentMonth_FontColor">#8C8A8C</color>
+    <color name="isPresentMonth_FontColor">#000000</color>
+    <color name="isToday_BgColor">#EBDCC1</color>
+    <color name="specialReminder">#FF0000</color>
+    <color name="commonReminder">#BDBAB5</color>
+
+    <color name="category_group_item_txt">#ff363d42</color>
+    <color name="background_holo_light">#fff4f4f4</color>
+    <color name="barckground_holo_dark">#ffeaeaea</color>
+
+    <color name="text_orange">#fffe6f18</color>
+    <color name="text_white_gray">#ff999999</color>
+    <color name="text_color_darkgray">#ff666666</color>
+
+    <color name="cover_color">#ffeeeeee</color>
+
+    <color name="actionbar_item_pressed">#ff16914e</color>
+
+    <color name="title">#ff333333</color>
+    <color name="frame">#61a716</color>
+    <color name="divider">#e6e6e6</color>
+
+    <color name="lesson_bg">#ffffffff</color>
+
+    <color name="class_index_item_bg">#fff0f0f0</color>
+    <color name="agreement">#ff68c04a</color>
+    <color name="comm_button_disable">#ffe7e7e7</color>
+
+    <color name="grey_lite">#f3f3f3</color>
+    <color name="default_text_color">#ff222222</color>
+    <color name="hint_text_color">#ffc2c2c2</color>
+    <color name="sub_title_color">#ff666666</color>
+    <color name="context_color">#ff999999</color>
+    <color name="divider_color">#ffe3e3e3</color>
+    <color name="login_def_bg_global_color">#fff6f6f6</color>
+    <color name="login_def_bg_head_color">#ff68c04a</color>
+    <color name="edit_divider_color">#ffe3e3e3</color>
+    <color name="login_def_white_color">#ffffffff</color>
+    <color name="login_def_text_color">#ff494949</color>
+    <color name="login_def_text_hint_color">#ffc8c8c8</color>
+    <color name="theme_color">#ff4fb64c</color>
+
+    <color name="reveal_color">#1b000000</color>
+</resources>

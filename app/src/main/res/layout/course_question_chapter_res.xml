@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.xy.view.TitleBarView
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/grey_lite" />
+   <!-- <LinearLayout
+        android:id="@+id/question_list_head_ll"
+        android:layout_below="@id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="5"
+        android:layout_marginLeft="13.5dp"
+        android:background="@color/grey_lite"
+        >
+
+        <com.xy.view.CourseSpinnerView
+            android:id="@+id/spinner"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:textAppearance="@style/TextStyle_14_4"
+            >
+
+        </com.xy.view.CourseSpinnerView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            >
+            <TextView
+                android:id="@+id/que_diffcult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="难易度 "
+                android:textAppearance="@style/TextStyle_14_4"
+                android:drawableRight="@mipmap/myclass_rank_down"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:id="@+id/que_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分数 "
+                android:drawableRight="@mipmap/myclass_rank_down"
+                android:textAppearance="@style/TextStyle_14_4"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/question_list_head_ll"
+        android:background="@color/devide_line" />-->
+
+    <FrameLayout
+        android:id="@+id/que_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <Button
+            android:id="@+id/pre_que_btn"
+            style="@style/questionBottom"
+            android:text="上一题" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@color/grey_lite" />
+
+        <Button
+            android:id="@+id/que_answer_btn"
+            style="@style/questionBottom"
+            android:text="答案" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@color/grey_lite" />
+
+        <Button
+            android:id="@+id/que_answer_sc"
+            style="@style/questionBottom"
+            android:text="@string/que_answer_sc" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@color/grey_lite" />
+
+        <Button
+            android:id="@+id/que_answer_fk"
+            style="@style/questionBottom"
+            android:text="@string/que_answer_fk" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@color/grey_lite" />
+
+        <Button
+            android:id="@+id/next_que_btn"
+            style="@style/questionBottom"
+            android:text="下一题" />
+    </LinearLayout>
+
+</RelativeLayout>

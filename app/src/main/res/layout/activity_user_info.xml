@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    >
+
+    <com.xy.view.TitleBarView
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TableLayout
+        android:id="@+id/edit_userinfo_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_bar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        >
+        <TableRow android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:ellipsize="end"
+                android:gravity="left|center_vertical"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="@string/setting_userinfo_username"
+                android:textColor="@color/gray_font"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/user_info_username"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:ellipsize="end"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text=""
+                android:textSize="16sp" />
+        </TableRow>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/devide_line" />
+        <TableRow android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:ellipsize="end"
+                android:gravity="left|center_vertical"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="@string/setting_userinfo_banlance"
+                android:textColor="@color/gray_font"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/user_info_banlance"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:ellipsize="end"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text=""
+                android:textSize="16sp" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/devide_line" />
+
+        <TableRow android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:ellipsize="end"
+                android:gravity="left|center_vertical"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="@string/setting_userinfo_truename"
+                android:textColor="@color/gray_font"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/user_info_truename"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_edittext_nb_normal"
+                android:ellipsize="end"
+                android:hint=""
+                android:inputType="text"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/devide_line" />
+
+        <TableRow android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:ellipsize="end"
+                android:gravity="left|center_vertical"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="@string/setting_userinfo_pass"
+                android:textColor="@color/gray_font"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/user_info_pass"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_edittext_nb_normal"
+                android:ellipsize="end"
+                android:hint=""
+                android:inputType="textPassword"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textSize="16sp" />
+        </TableRow>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/devide_line" />
+
+        <TableRow android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:ellipsize="end"
+                android:gravity="left|center_vertical"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="@string/setting_userinfo_mphone"
+                android:textColor="@color/gray_font"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/user_info_mphone"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_edittext_nb_normal"
+                android:ellipsize="end"
+                android:hint=""
+                android:inputType="text"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textSize="16sp" />
+        </TableRow>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/devide_line" />
+        <TableRow android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:ellipsize="end"
+                android:gravity="left|center_vertical"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="@string/setting_userinfo_address"
+                android:textColor="@color/gray_font"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/user_info_address"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_edittext_nb_normal"
+                android:ellipsize="end"
+                android:hint=""
+                android:inputType="text"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textSize="16sp" />
+        </TableRow>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/devide_line" />
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/edit_contact_btn_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_userinfo_body" >
+
+        <Button
+            android:id="@+id/button_submit"
+            style="@style/Theme.Button.Large"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/defalut_margin"
+            android:layout_marginRight="@dimen/defalut_margin"
+            android:layout_marginTop="50dp"
+            android:text="@string/button_confirm" />
+    </LinearLayout>
+
+</RelativeLayout>
