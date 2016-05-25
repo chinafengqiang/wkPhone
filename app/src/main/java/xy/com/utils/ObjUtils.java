@@ -3,6 +3,7 @@ package xy.com.utils;
 import java.util.HashMap;
 import java.util.List;
 
+
 /**
  * 
  * @author FQ.CHINA
@@ -63,7 +64,7 @@ public class ObjUtils {
     else
       return false;
   }
-  
+
   public static boolean isListNotBlank(List<HashMap<String, Object>> resList){
       if(resList != null && resList.size() > 0)
         return true;
