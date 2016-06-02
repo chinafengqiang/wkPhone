@@ -52,6 +52,8 @@ public class CourseListFragment extends Fragment implements IXListViewListener {
     List<CourseVo> courseList = new ArrayList<CourseVo>();
     private CoursrAdapter adapter;
 
+    private int deptId = 0;
+
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         mContext = getActivity();
@@ -92,6 +94,7 @@ public class CourseListFragment extends Fragment implements IXListViewListener {
             categorySn = bundle.getString(CATEGORY_SN);
 
         }
+        deptId = AppConstants.DEPT_ID;
     }
 
     private void findViewById() {
@@ -111,7 +114,7 @@ public class CourseListFragment extends Fragment implements IXListViewListener {
         pDialog.show();
 
         String tag_json_obj = "json_obj_req";
-        String url = AppConstants.API_GET_COURSE_BY_SN+"?sn="+categorySn+"&offset="+offset;
+        String url = AppConstants.API_GET_COURSE_BY_SN+"?sn="+categorySn+"&offset="+offset+"&deptId="+deptId;
 
         FastJsonRequest<CourseList> fastRequest = new FastJsonRequest<CourseList>(Request.Method.GET, url, CourseList.class, null, new Response.Listener<CourseList>() {
 

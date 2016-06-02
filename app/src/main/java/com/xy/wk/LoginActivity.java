@@ -98,7 +98,7 @@ public class LoginActivity extends BaseFragmentActivity {
             return;
         }
         String tag_json_obj = "json_obj_req";
-        String url = AppConstants.API_USER_LOGIN + "?username=" + uname + "&password=" + pass;
+        String url = AppConstants.API_USER_LOGIN + "?username=" + uname + "&password=" + pass+"&deptId="+AppConstants.DEPT_ID;
 
         FastJsonRequest<LoginInfo> fastRequest = new FastJsonRequest<LoginInfo>(Request.Method.GET, url, LoginInfo.class, null, new Response.Listener<LoginInfo>() {
 
@@ -126,6 +126,8 @@ public class LoginActivity extends BaseFragmentActivity {
                         ToastUtil.showToast(mContext,R.string.login_user_novalid);
                     }else if(ret == 403){
                         ToastUtil.showToast(mContext,R.string.login_user_novalid);
+                    }else if(ret == 405){
+                        ToastUtil.showToast(mContext,R.string.login_user_dept_error);
                     }else {
                         ToastUtil.showToast(mContext,R.string.login_fail);
                     }

@@ -5,6 +5,9 @@ package xy.com.utils;
  */
 public interface AppConstants {
 
+    //App所在的学校
+    int DEPT_ID = 1;
+
     String SERVER_HOST = "http://192.168.18.131:8080/xywk";
 
     //API基础地址
