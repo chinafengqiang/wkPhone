@@ -83,6 +83,7 @@
     <string name="setting_userinfo">个人信息</string>
     <string name="sign_in">登 录</string>
     <string name="register">注册</string>
+    <string name="login">登录</string>
     <string name="weibo_login">微博登录</string>
     <string name="qq_login">QQ登录</string>
     <string name="webchat_login">微信登录</string>
