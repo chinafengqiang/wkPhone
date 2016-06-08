@@ -138,4 +138,10 @@
     <string name="download_cancle">您已取消了的下载...</string>
     <string name="download_course_pre">准备下载...</string>
     <string name="download_course_downloading">下载中...</string>
+
+    <!--注册 -->
+    <string name="mphone_hint">请输入手机号码</string>
+    <string name="get_mphone_code">获取验证码</string>
+    <string name="reg_xieyi">我已阅读并同意</string>
+    <string name="xieyi_url">使用条款和隐私政策</string>
 </resources>

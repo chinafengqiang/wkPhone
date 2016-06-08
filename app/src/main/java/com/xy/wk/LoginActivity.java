@@ -1,6 +1,9 @@
 package com.xy.wk;
 
 
+import android.content.Context;
+import android.content.Intent;
+import android.sax.TextElementListener;
 import android.support.v4.app.FragmentManager;
 import android.content.SharedPreferences;
 import android.support.v4.app.FragmentTransaction;
@@ -11,6 +14,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -36,12 +40,16 @@ public class LoginActivity extends BaseFragmentActivity {
     private Button button_login;
     private SharedPreferences sp;
     private int type;
+    private TextView register;
+    private Context mContext;
     @Override
     protected void findViewById() {
+        mContext = this;
         title_come_back = (ImageView) findViewById(R.id.title_come_back);
         username = (EditText) findViewById(R.id.username);
         password = (EditText) findViewById(R.id.password);
         button_login = (Button) findViewById(R.id.button_login);
+        register = (TextView) findViewById(R.id.register);
     }
 
     @Override
@@ -82,6 +90,15 @@ public class LoginActivity extends BaseFragmentActivity {
             @Override
             public void onClick(View view) {
                 login();
+            }
+        });
+
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(mContext,RegisterActivity.class);
+                startActivity(intent);
+                overridePendingTransition(R.anim.push_left_in, R.anim.push_right_out);
             }
         });
     }
