@@ -53,6 +53,10 @@ public interface AppConstants {
 
     String API_REMOVE_USER_TYPE_QUESTION = API_HOST+"/removeUserQuestion";
 
+    String API_SEND_CODE = API_HOST+"/sendCode";
+
+    String API_USER_REGISTER = API_HOST+"/register";
+
     /*
        试题类型
      */

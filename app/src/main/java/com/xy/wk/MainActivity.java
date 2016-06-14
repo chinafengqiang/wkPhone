@@ -49,7 +49,6 @@ public class MainActivity extends FragmentActivity {
     }
 
 
-
     private void initSp(){
         sp = SpUtil.getSharePerference(mContext);
     }
@@ -187,7 +186,6 @@ public class MainActivity extends FragmentActivity {
             case 2:
                 buttom_user_setting.performClick();
                 break;
-
         }
     }
 }

@@ -134,6 +134,7 @@ public class LoginActivity extends BaseFragmentActivity {
                         ed.commit();
 
                         setResult(type);
+
                         finish();
                     }else if(ret == 400){
                         ToastUtil.showToast(mContext,R.string.login_user_notexist);
@@ -178,4 +179,5 @@ public class LoginActivity extends BaseFragmentActivity {
         }
         return super.onKeyDown(keyCode, event);
     }
+
 }
