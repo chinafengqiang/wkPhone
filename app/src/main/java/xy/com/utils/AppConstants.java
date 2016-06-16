@@ -8,7 +8,7 @@ public interface AppConstants {
     //App所在的学校
     int DEPT_ID = 1;
 
-    String SERVER_HOST = "http://192.168.18.131:8080/xywk";
+    String SERVER_HOST = "http://www.freedu.com.cn";
 
     //API基础地址
     String API_HOST = SERVER_HOST+"/api";

@@ -99,7 +99,7 @@
     <string name="login_user_notexist">用户不存在</string>
     <string name="login_password_error">用户密码错误</string>
     <string name="login_user_novalid">用户无效</string>
-    <string name="login_user_dept_error">用户学校出现异常</string>
+    <string name="login_user_dept_error">用户不属于此学校</string>
     <string name="setting_exit_btn">退出</string>
     <string name="setting_cance">取消</string>
     <string name="setting_exit_cfg">确认要退出登录？</string>
