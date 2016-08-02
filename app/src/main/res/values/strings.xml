@@ -26,6 +26,8 @@
     <string name="course_linian">历年真题</string>
     <string name="v_jx_title">视频解析</string>
     <string name="v_jx_play_fail">播放解析失败，请检查是否安装播放器</string>
+    <string name="moni_paper_title">模拟试卷</string>
+    <string name="zt_paper_title">真题试卷</string>
 
     <string name="question_not_exist">无试题存在</string>
     <string name="question_is_maxpre">已为第一题</string>

@@ -8,7 +8,7 @@ public interface AppConstants {
     //App所在的学校
     int DEPT_ID = 1;
 
-    String SERVER_HOST = "http://www.freedu.com.cn";
+    String SERVER_HOST = "http://192.168.18.131:8080/xywk/";
 
     //API基础地址
     String API_HOST = SERVER_HOST+"/api";
@@ -56,6 +56,8 @@ public interface AppConstants {
     String API_SEND_CODE = API_HOST+"/sendCode";
 
     String API_USER_REGISTER = API_HOST+"/register";
+
+    String API_COURSE_PAPER = API_HOST+"/getCoursePaper";//获取课程试卷
 
     /*
        试题类型

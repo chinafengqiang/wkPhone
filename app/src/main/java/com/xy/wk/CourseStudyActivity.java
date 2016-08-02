@@ -124,7 +124,7 @@ public class CourseStudyActivity extends BaseFragmentActivity {
             }
         });
 
-        lay_study_mn.setOnClickListener(new View.OnClickListener() {
+        /*lay_study_mn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(mContext, CourseQuestionChapterActivity.class);
@@ -143,6 +143,28 @@ public class CourseStudyActivity extends BaseFragmentActivity {
                 intent.putExtra("courseId", courseId);
                 intent.putExtra("queClass", AppConstants.QUESTION_CLASS_LNZT);
                 intent.putExtra("title", mContext.getString(R.string.course_linian));
+                startActivity(intent);
+                overridePendingTransition(R.anim.push_left_in, R.anim.push_right_out);
+            }
+        });*/
+
+        lay_study_mn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(mContext, CoursePaperActivity.class);
+                intent.putExtra("courseId", courseId);
+                intent.putExtra("queClass", AppConstants.QUESTION_CLASS_MNLX);
+                startActivity(intent);
+                overridePendingTransition(R.anim.push_left_in, R.anim.push_right_out);
+            }
+        });
+
+        lay_study_zt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(mContext, CoursePaperActivity.class);
+                intent.putExtra("courseId", courseId);
+                intent.putExtra("queClass", AppConstants.QUESTION_CLASS_LNZT);
                 startActivity(intent);
                 overridePendingTransition(R.anim.push_left_in, R.anim.push_right_out);
             }

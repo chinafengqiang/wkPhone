@@ -167,6 +167,13 @@
             android:screenOrientation="portrait"
             android:theme="@style/Theme.main" >
         </activity>
+
+        <activity
+            android:name="com.xy.wk.CoursePaperActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.main" >
+        </activity>
     </application>
 
 </manifest>
